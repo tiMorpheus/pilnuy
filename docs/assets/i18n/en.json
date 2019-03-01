@@ -1,0 +1,22 @@
+{
+  "HOME": {
+    "TITLE": "Hello Angular with ngx-translate!",
+    "SELECT": "Change language"
+  },
+  "NAV":{
+    "HOME":"Home",
+    "ABOUT":"About Us",
+    "HOWITWORKS":"How It Works",
+    "CONNECT":"Connect ",
+    "PRICING":"Pricing",
+    "TESTIMONIAL":"Testimonial",
+    "CONTACT":"Contacts"
+  },
+  "HOTLINE":{
+    "TITLE":"Hotline"
+  },
+  "TESTIMONICAL": {
+    "NAV-SPAN":"from"
+
+  }
+}
