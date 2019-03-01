@@ -1,0 +1,26 @@
+{
+
+  "HOME": {
+    "TITLE": "Hello Angular with ngx-translate!",
+    "SELECT": "Change language"
+  },
+  "NAV":{
+    "HOME": "О сервисе",
+    "ABOUT": "Области применения",
+    "HOWITWORKS": "Как это работает",
+    "CONNECT": "Как подключиться",
+    "PRICING": "Стоимость",
+    "TESTIMONIAL": "О нас говорят",
+    "CONTACT": "Контакты"
+  },
+  "HOTLINE":{
+    "TITLE":"Горячая линия:"
+
+  },
+  "TESTIMONICAL": {
+    "NAV-SPAN":"из"
+
+  }
+
+
+}

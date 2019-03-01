@@ -1,0 +1,151 @@
+
+.connect-section {
+
+  background: center url("/assets/connect/connect-bg@2x.png") no-repeat;
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+
+  .container {
+    padding: 15px;
+
+
+    .connect-section-title {
+
+      color: #FFFFFF;
+      font-family: "Rounded Mplus 1c Black";
+      font-size: 20px;
+      line-height: 29px;
+      margin-bottom: 16px;
+
+
+      text-transform: uppercase;
+
+
+    }
+
+
+    .connect-block-wrap {
+
+      display: flex;
+      border-color: rgba(255, 255, 255, 0.1);
+      border-style: solid;
+      background-color: rgba(247, 247, 247, 0);
+
+      flex-wrap: wrap;
+
+      border-width: 2px 0 0 2px;
+      margin-bottom: 48px;
+
+      .connect-item {
+        width: 100%;
+        box-sizing: border-box;
+        border-color: rgba(255, 255, 255, 0.1);
+        border-style: solid;
+        border-width: 0 2px 2px 0;
+
+        padding: 28px 32px;
+
+        .connect-item-number {
+
+          opacity: 0.5;
+          color: #FFFFFF;
+          font-family: "IBM Plex Sans";
+          font-size: 24px;
+          line-height: 32px;
+          margin-bottom: 16px;
+        }
+
+
+        .connect-item-title {
+          color: #FFFFFF;
+          font-family: "IBM Plex Sans";
+          font-size: 16px;
+          font-weight: bold;
+          line-height: 20px;
+          margin-bottom: 8px;
+
+        }
+
+        .connect-item-description {
+          color: #FFFFFF;
+          font-family: "IBM Plex Sans";
+          font-size: 14px;
+          line-height: 18px;
+        }
+      }
+
+    }
+
+    .connect-link-btn {
+      height: 56px;
+      border-radius: 6px;
+      background-color: #5386FF;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      color: #FFFFFF;
+      font-family: "IBM Plex Sans";
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 20px;
+    }
+
+  }
+}
+
+
+@media (min-width: 68em) {
+
+
+  .connect-section {
+
+    padding: 72px 0 0;
+
+    background-size: 140%;
+    BACKGROUND-POSITION-X: -250PX;
+
+    .container {
+
+
+      padding: 0;
+
+      max-width: 924px;
+      margin: 0 auto;
+
+      .connect-link-btn {
+        width: 252px;
+
+      }
+
+      .connect-section-title {
+        opacity: 0.9;
+        color: #FFFFFF;
+        font-size: 40px;
+        line-height: 60px;
+        margin-bottom: 40px;
+      }
+
+
+      .connect-block-wrap {
+
+
+        .connect-item {
+          width: 25%;
+
+
+          height: 233px;
+
+          .connect-item-number {
+            margin-bottom: 57px;
+
+          }
+        }
+      }
+
+
+    }
+  }
+}

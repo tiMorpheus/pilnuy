@@ -1,0 +1,93 @@
+
+
+<div class="sidebar">
+
+  <div class="s-sidebar__header">
+    <h3 class="sidebar-hotline-sign">
+
+      <span class="sidebar-hotline-text">Горячая линия:</span>
+
+      <span class="call-us">+38 044 511 49 59</span>
+    </h3>
+    <button class="s-sidebar__trigger" (click)="toggleSidebar()">
+      <i class="fa fa-bars"></i>
+    </button>
+  </div>
+
+
+  <nav class="" [className]="sidebarHidden ? 's-sidebar__nav active' : ' s-sidebar__nav inactive'">
+    <div class="logo"></div>
+    <ul>
+      <li>
+        <a class="s-sidebar__nav-link"  routerLink="/home" routerLinkActive="active-route" (click)="toggleSidebar()">
+          <span>{{ 'NAV.HOME' | translate }}</span>
+        </a>
+      </li>
+
+      <li>
+        <a class="s-sidebar__nav-link" routerLink="/about" routerLinkActive="active-route" (click)="toggleSidebar()">
+          <span>{{ 'NAV.ABOUT' | translate }}</span>
+        </a>
+      </li>
+
+      <li>
+        <a class="s-sidebar__nav-link" routerLink="/howitworks" routerLinkActive="active-route" (click)="toggleSidebar()">
+          <span>{{ 'NAV.HOWITWORKS' | translate }}</span>
+        </a>
+      </li>
+
+      <li>
+        <a class="s-sidebar__nav-link" routerLink="/connect" routerLinkActive="active-route" (click)="toggleSidebar()">
+          <span>{{ 'NAV.CONNECT' | translate }}</span>
+
+        </a>
+      </li>
+
+      <li>
+        <a class="s-sidebar__nav-link" routerLink="/pricing" routerLinkActive="active-route" (click)="toggleSidebar()">
+          <span>{{ 'NAV.PRICING' | translate }}</span>
+        </a>
+      </li>
+
+
+      <li>
+        <a class="s-sidebar__nav-link" routerLink="/testimonial" routerLinkActive="active-route" (click)="toggleSidebar()">
+          <span>{{ 'NAV.TESTIMONIAL' | translate }}</span>
+        </a>
+      </li>
+
+
+      <li>
+        <a class="s-sidebar__nav-link" routerLink="/contact" routerLinkActive="active-route" (click)="toggleSidebar()">
+          <span>{{ 'NAV.CONTACT' | translate }}</span>
+        </a>
+      </li>
+
+      <li class="lang-wrap">
+
+        <span (click)="translate.use('en')" [className]="'en' === translate.currentLang ? 'active' : ''">En</span>
+        <span (click)="translate.use('ru')" [className]="'ru' === translate.currentLang ? 'active' : ''">Ru</span>
+      </li>
+    </ul>
+
+
+    <div class="mobile-view">
+
+
+      <app-socials-section></app-socials-section>
+
+
+    </div>
+
+    <div class="footer-nav">
+      <!--{{ 'HOME.SELECT' | translate }}-->
+      <!--<select #langSelect (change)="translate.use(langSelect.value)">-->
+        <!--<option *ngFor="let lang of translate.getLangs()" [value]="lang" [selected]="lang === translate.currentLang">{{ lang }}</option>-->
+      <!--</select>-->
+
+      <app-footer-cp style="margin-top: auto;"></app-footer-cp>
+    </div>
+
+
+  </nav>
+</div>

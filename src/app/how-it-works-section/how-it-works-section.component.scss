@@ -1,0 +1,44 @@
+
+.how-it-works-section {
+  .container {
+    padding: 15px;
+
+    .section-header {
+      color: #000000;
+      font-family: "Rounded Mplus 1c Black";
+      font-size: 20px;
+      line-height: 29px;
+      margin-bottom: 27px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.block {
+  font-family: "IBM Plex Sans";
+  height: 484px;
+  width: 917px;
+  background: center url("/assets/howitworks.svg") no-repeat;
+}
+
+
+@media (min-width: 68em) {
+
+  .how-it-works-section {
+    padding: 72px 0;
+    .container {
+
+      padding: 0;
+      margin: 0 auto;
+      max-width: 924px;
+
+
+      .section-header{
+        font-size: 40px;
+        line-height: 60px;
+        margin-bottom: 94px;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,109 @@
+
+
+<div class="contacts-section">
+
+  <div class="container">
+
+    <!--<div class="flex-wrap">-->
+      <div class="contact-header-wrap">
+
+        <h2 class="contact-section-title">
+          Контакты
+        </h2>
+
+        <div class="contact-header-info">
+          <p class="contact-header-description">
+            Укажите ваши конактные данные и немного о себе и наши менеджеры свяжутся с вами, что бы обсудить с вами лучшее предложение!
+          </p>
+
+          <div class="home-hotline-wrap">
+            <h3 class="sidebar-hotline-sign">
+
+              <span class="sidebar-hotline-text">Горячая линия:</span>
+
+              <span class="call-us">+38 044 511 49 59</span>
+            </h3>
+
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="form" >
+
+
+        <form action="mailto:tt.softevol@gmail.com"  class="contact-form" enctype="text/plain">
+
+          <div class="flex-wrap">
+            <div class="form-left">
+              <div class="group">
+                <input type="text" required [(ngModel)]="name" id="name" name="name">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Ваше имя</label>
+              </div>
+
+
+
+              <div class="group">
+                <input type="text" required [(ngModel)]="phone" id="phone" name="phone">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Ваше номер телефона</label>
+              </div>
+            </div>
+
+
+
+            <div class="form-right">
+
+
+              <div class="group">
+                <textarea required [(ngModel)]="msg" id="msg" name="msg"></textarea>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Расскажите нам немного о себе</label>
+              </div>
+            </div>
+
+          </div>
+
+
+          <input type="submit" class="contact-submit-btn" (click)="submitMessage()" placeholder="Отправить" />
+
+
+
+        </form>
+
+      </div>
+
+
+
+
+
+    <!--</div>-->
+
+    <div class="social-block">
+
+
+      <div class="follow-us">
+
+
+        <span class="follow-us-text">Следите за нами в соцсетях:</span>
+
+        <div class="socials-link-wrap">
+          <a href="" class="social-follow-link follow-twitter">Twitter</a>
+          <a href="" class="social-follow-link follow-telegram">Telegram</a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+</div>
+

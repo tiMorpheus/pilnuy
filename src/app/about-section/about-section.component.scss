@@ -1,0 +1,251 @@
+
+.about-section {
+  margin-top: 16px;
+
+  .container {
+    padding: 0 15px;
+
+
+
+    .consultation-link-text {
+      height: 56px;
+      width: 100%;
+        color: #FFFFFF;
+        font-family: "IBM Plex Sans";
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 20px;
+
+
+      border-radius: 6px;
+      background-color: #5386FF;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
+
+    .about-item-2{
+      .about-img-wrap{
+        order: 1;
+
+      }
+    }
+
+    .about-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+
+      flex-wrap: wrap;
+
+      .about-img-wrap {
+
+        display: inline-block;
+
+      }
+
+
+
+      .about-img-01 {
+        width: 290px;
+        height: 240px;
+
+        background: center url("/assets/about/about-01/about-01.svg") no-repeat;
+        background-size: contain;
+      }
+
+      .about-img-02 {
+        width: 290px;
+        height: 240px;
+
+        background: center url("/assets/about/about-02/about-02.svg") no-repeat;
+        background-size: contain;
+      }
+
+      .about-img-03 {
+        width: 290px;
+        height: 240px;
+
+        background: center url("/assets/about/about-03/about-03.svg") no-repeat;
+        background-size: contain;
+      }
+
+      .about-item-block {
+
+        .about-item-header-block-header {
+          max-width: 387px;
+
+          .about-item-title {
+            color: #000000;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+
+            .item-count {
+              display: block;
+
+              color: rgba(0,0,0,0.1);
+              font-family: "Rounded Mplus 1c Black";
+              font-size: 20px;
+              line-height: 29px;
+            }
+
+            span {
+              font-size: 40px;
+              line-height: 60px;
+
+
+              color: #000000;
+              font-family: "Rounded Mplus 1c Black";
+              font-size: 20px;
+              line-height: 29px;
+            }
+          }
+        }
+
+        .item-description {
+
+          display: none;
+        }
+
+
+      }
+    }
+  }
+
+}
+
+.mobile-text{
+
+    color: #000000;
+    font-family: "IBM Plex Sans";
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.descktop-link{
+  display: none;
+
+}
+
+
+.mobile-link{}
+
+@media (min-width: 68em) {
+  .mobile-text{
+    display: none;
+  }
+
+  .descktop-link{
+    display: block;
+  }
+
+  .mobile-link{
+    display: none;
+  }
+
+  .about-section {
+    padding: 100px 0 100px;
+
+    .container {
+      padding: 0;
+
+      max-width: 924px;
+      margin: 0 auto;
+
+      .about-item-2{
+        .about-img-wrap{
+          order: 0;
+
+        }
+      }
+
+
+      .consultation-link-text {
+        height: 56px;
+        width: 252px;
+        border-radius: 6px;
+        background-color: #5386FF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        color: #FFFFFF;
+        font-family: "IBM Plex Sans";
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 20px;
+        margin-top: 32px;
+      }
+
+
+      .about-item {
+        margin-bottom: 60px;
+
+
+
+        .about-img-01 {
+          width: 400px;
+          height: 400px;
+
+          background: url("/assets/about/about-01/about-01.svg") no-repeat;
+          background-size: contain;
+        }
+
+        .about-img-02 {
+          width: 400px;
+          height: 400px;
+
+          background: url("/assets/about/about-02/about-02.svg") no-repeat;
+          background-size: contain;
+        }
+
+        .about-img-03 {
+          width: 400px;
+          height: 400px;
+
+          background: url("/assets/about/about-03/about-03.svg") no-repeat;
+          background-size: contain;
+        }
+
+        .about-item-block {
+
+          .item-description {
+            max-width: 400px;
+            color: #000000;
+            font-family: "IBM Plex Sans";
+            font-size: 16px;
+            line-height: 20px;
+
+            display: block;
+          }
+
+          .about-item-header-block-header {
+            max-width: 387px;
+
+            .about-item-title {
+              color: #000000;
+              text-transform: uppercase;
+              margin-bottom: 16px;
+
+
+
+              .item-count {
+                font-size: 40px;
+                line-height: 60px;
+              }
+
+              span {
+                font-size: 40px;
+                line-height: 60px;
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

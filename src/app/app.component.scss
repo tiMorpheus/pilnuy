@@ -1,0 +1,38 @@
+
+
+/* Layout */
+.main-layout {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+
+  .content{
+    background: #F4FAFA;
+
+    margin-top: 4em;
+    width: 100%;
+  }
+}
+
+/* Mobile First */
+@media (min-width: 42em) {
+  .content {
+    //margin-left: 4em;
+  }
+
+
+}
+
+
+@media (min-width: 68em) {
+
+  .main-layout{
+    .content {
+      margin-left: 280px;
+      margin-top: 0;
+    }
+  }
+
+
+
+}

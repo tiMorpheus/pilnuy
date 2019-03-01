@@ -1,0 +1,253 @@
+.pricing-section {
+
+  .container {
+    padding: 15px;
+
+
+    .section-header {
+      color: #000000;
+      font-family: "Rounded Mplus 1c Black";
+      font-size: 20px;
+      line-height: 29px;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+
+
+    .flex-wrap {
+
+      display: flex;
+      flex-wrap: wrap;
+
+      .pricing-tab {
+        background: white;
+        padding: 24px;
+        margin-bottom: 12px;
+
+        .pricing-package-circle {
+          height: 96px;
+          width: 96px;
+          background-color: #55D59E;
+          display: flex;
+
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          border-radius: 50%;
+          margin: 0 auto;
+          margin-bottom: 24px;
+
+          .centered {
+            text-align: center;
+
+            margin: auto;
+            color: white;
+            display: flex;
+            flex-direction: column;
+
+            .text-package {
+              color: rgba(255,255,255,.6);
+              font-family: "IBM Plex Sans";
+              font-size: 12px;
+              font-weight: bold;
+              line-height: 15px;
+              text-align: center;
+              margin-bottom: 2px;
+            }
+
+            .bold-text-package {
+              color: #FFFFFF;
+              font-family: "IBM Plex Sans";
+              font-size: 15px;
+              font-weight: bold;
+              line-height: 19px;
+              text-align: center;
+            }
+          }
+        }
+
+        .duration {
+          color: #000000;
+          font-family: "IBM Plex Sans";
+          font-size: 14px;
+          font-weight: bold;
+          line-height: 18px;
+          margin-bottom: 8px;
+        }
+
+        .text {
+          color: #000000;
+          font-family: "IBM Plex Sans";
+          font-size: 14px;
+          line-height: 18px;
+          margin-bottom: 12px;
+        }
+
+        .discount {
+          color: rgba(0,0,0, 0.2);
+          font-family: "IBM Plex Sans";
+          font-size: 14px;
+          line-height: 18px;
+          margin-bottom: 8px;
+        }
+
+        .price {
+          color: #656565;
+          font-family: "IBM Plex Sans";
+          font-size: 24px;
+          font-weight: bold;
+          line-height: 32px;
+          margin-bottom: 16px;
+        }
+
+        .package-link {
+          border: 2px solid #5386FF;
+          border-radius: 6px;
+          background-color: #FFFFFF;
+          height: 48px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+
+          color: #5386FF;
+          font-family: "IBM Plex Sans";
+          font-size: 14px;
+          font-weight: bold;
+          line-height: 18px;
+        }
+      }
+
+      .premium {
+
+        padding: 24px;
+        background-color: #5386FF;
+
+        .text-package {
+          display: block;
+          color: rgba(255,255,255,.6);
+          font-family: "IBM Plex Sans";
+          font-size: 14px;
+          font-weight: bold;
+          line-height: 18px;
+        }
+
+        .bold-text-package {
+          display: block;
+          color: #FFFFFF;
+          font-family: "IBM Plex Sans";
+          font-size: 24px;
+          font-weight: bold;
+          line-height: 32px;
+          margin-bottom: 24px;
+        }
+
+        .text{
+          color: #FFFFFF;
+          font-family: "IBM Plex Sans";
+          font-size: 14px;
+          line-height: 18px;
+          margin-bottom: 12px;
+        }
+
+
+        .discount{
+          color: #FFFFFF;
+          font-family: "IBM Plex Sans";
+          font-size: 14px;
+          line-height: 18px;
+          margin-bottom: 12px;
+        }
+
+        .price {
+          color: #FFFFFF;
+          font-family: "IBM Plex Sans";
+          font-size: 24px;
+          font-weight: bold;
+          line-height: 32px;
+          margin-bottom: 16px;
+        }
+
+
+        .package-link {
+          height: 48px;
+          border-radius: 6px;
+          background-color: #FFFFFF;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          color: #5386FF;
+          font-family: "IBM Plex Sans";
+          font-size: 14px;
+          font-weight: bold;
+          line-height: 18px;
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width: 68em) {
+  .pricing-section {
+    padding: 70px 0 ;
+
+    .container {
+      padding: 0;
+      max-width: 924px;
+      margin: 0 auto;
+
+      .section-header {
+
+          font-size: 40px;
+          line-height: 60px;
+        margin-bottom: 12px;
+      }
+
+      .flex-wrap{
+
+        flex-wrap: initial;
+
+        .pricing-tab{
+          max-width: 204px;
+
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          height: 432px;
+
+          .discount{
+            margin-bottom: 18px;
+          }
+
+        }
+
+        .premium{
+
+          padding: 40px 40px 32px;
+
+
+          display: flex;
+          flex-direction: column;
+          height: 432px;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+
+          .price{
+            margin-top: auto;
+
+          }
+
+          .package-link{
+          }
+        }
+      }
+
+
+
+    }
+  }
+
+
+}

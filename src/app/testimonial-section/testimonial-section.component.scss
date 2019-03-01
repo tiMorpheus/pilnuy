@@ -1,0 +1,135 @@
+
+
+.testimonical-section{
+background: white;
+
+  min-height: 100vh;
+
+  .container{
+    padding: 15px;
+
+
+
+    .section-header{
+      color: #000000;
+      font-family: "Rounded Mplus 1c Black";
+      font-size: 20px;
+      line-height: 29px;
+      margin-bottom: 24px;
+      text-transform: uppercase;
+
+    }
+
+  }
+}
+
+
+.testi-item{
+
+    background-color: #F5F5F5;
+  width: 100%;
+  padding: 24px;
+
+  .testi-img{
+
+    width: 50px;
+    height: 50px;
+    margin-bottom: 8px;
+
+
+
+  }
+
+  .testi-name {
+    color: #000000;
+    font-family: "IBM Plex Sans";
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+    margin-bottom: 4px;
+  }
+
+  .testi-address{
+    color: #808080;
+    font-family: "IBM Plex Sans";
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 16px;
+  }
+
+  .testi-review {
+    color: #000000;
+    font-family: "IBM Plex Sans";
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 24px;
+  }
+
+  .testi-nav{
+    display: flex;
+
+    color: #000000;
+    font-family: "IBM Plex Sans";
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+
+    .testi-arrows{
+      margin-left: 24px;
+
+      i:first-child{
+        margin-right: 10px;
+      }
+    }
+
+
+  }
+
+
+
+}
+
+
+@media (min-width: 68em) {
+  .testimonical-section{
+    padding: 60px 0;
+
+    .container{
+      padding: 0;
+
+      max-width: 924px;
+      margin: 0 auto;
+
+
+
+      .section-header{
+        font-size: 40px;
+        line-height: 60px;
+
+        margin-bottom: 100px;
+      }
+    }
+
+
+  }
+
+
+
+  .testi-item{
+    margin-right: 50px;
+    display: flex;
+
+
+    padding: 35px;
+
+    .testi-img{
+      width: 72px;
+      height: 72px;
+    }
+
+    .testi-wrap{
+      margin-left: 16px;
+
+    }
+  }
+}

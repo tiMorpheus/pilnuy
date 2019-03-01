@@ -1,0 +1,356 @@
+
+
+.contacts-section{
+
+  background: #F4FCFF;
+
+
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+
+
+  .container{
+
+    padding: 15px;
+
+    //display: flex;
+    //flex-direction: column;
+    //position: relative;
+    //height: 100vh;
+
+
+
+
+
+    .contact-section-title{
+        color: #000000;
+        font-family: "Rounded Mplus 1c Black";
+        font-size: 20px;
+        line-height: 29px;
+      margin-bottom: 12px;
+
+      text-transform: uppercase;
+    }
+
+
+    .contact-header-info{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 24px;
+
+      .sidebar-hotline-sign{
+        display: flex;
+        flex-direction: column;
+
+
+        .sidebar-hotline-text{
+
+            color: #000000;
+            font-family: "IBM Plex Sans";
+            font-size: 16px;
+            line-height: 20px;
+          margin-bottom: 12px;
+        }
+
+
+        .call-us{
+          color: #000000;
+          font-family: "IBM Plex Sans";
+          font-size: 16px;
+          font-weight: bold;
+          line-height: 20px;
+        }
+      }
+
+    }
+    .contact-header-description{
+      color: #000000;
+      font-family: "IBM Plex Sans";
+      font-size: 14px;
+      line-height: 18px;
+      margin-bottom: 26px;
+    }
+
+
+
+
+
+
+  }
+
+  .social-block{
+    //justify-self: flex-end;
+    padding: 30px 0;
+
+    .follow-us{
+
+      display: flex;
+      flex-direction: column;
+
+      .follow-us-text{
+        color: #000000;
+        font-family: "IBM Plex Sans";
+        font-size: 16px;
+        line-height: 20px;
+        margin-right: 16px;
+        margin-bottom: 12px;
+      }
+
+      .social-follow-link {
+        color: #5386FF;
+        font-family: "IBM Plex Sans";
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 20px;
+        margin-right: 16px;
+      }
+    }
+
+
+  }
+
+}
+
+
+
+@media (min-width: 68em) {
+
+
+  .contacts-section {
+
+    padding: 70px 0;
+
+
+    .container {
+
+
+      width: 100%;
+      max-width: 924px;
+      margin: 0 auto;
+
+
+      .contact-section-title{
+
+          font-size: 40px;
+          line-height: 60px;
+        margin-bottom: 16px;
+      }
+
+      .contact-header-info{
+        flex-direction: row;
+
+        .contact-header-description{
+          max-width: 350px;
+          margin-right: 112px;
+        }
+      }
+    }
+
+    .social-block{
+
+
+      width: 100%;
+
+      justify-self: flex-end;
+      max-width: 924px;
+      margin: 0 auto;
+    }
+  }
+
+}
+
+
+
+//---------
+
+
+* { box-sizing:border-box; }
+
+
+  .group{
+    position:relative;
+    margin-bottom: 50px;
+
+
+
+    input 	,textarea			{
+      font-size:18px;
+      width: 100%;
+      padding:10px 0px 10px 5px;
+      display:block;
+      border:none;
+      border-bottom:1px solid rgba(0,0,0,0.1);
+      background: transparent;
+    }
+
+    input:focus ,textarea:focus		{ outline:none; }
+
+
+
+    /* LABEL ======================================= */
+    label 				 {
+        color: #000000;
+        font-family: "IBM Plex Sans";
+        font-size: 14px;
+        line-height: 20px;
+
+
+      position:absolute;
+      pointer-events:none;
+      left:5px;
+      top:10px;
+      transition:0.2s ease all;
+      -moz-transition:0.2s ease all;
+      -webkit-transition:0.2s ease all;
+    }
+
+
+    /* active state */
+    input:focus ~ label, input:valid ~ label 		,
+    textarea:focus ~ label, textarea:valid ~ label 		{
+      top:-20px;
+      font-size:14px;
+      color:#5386FF;
+    }
+
+
+
+  }
+
+
+
+  .form-left{
+
+  }
+
+  input{
+
+  }
+
+  textarea{
+
+    height: 134px;
+  }
+
+
+
+
+    /* BOTTOM BARS ================================= */
+    .bar 	{ position:relative; display:block; width:100%; }
+    .bar:before, .bar:after 	{
+      content:'';
+      height:2px;
+      width:0;
+      bottom:1px;
+      position:absolute;
+      background:#5386FF;
+      transition:0.2s ease all;
+      -moz-transition:0.2s ease all;
+      -webkit-transition:0.2s ease all;
+    }
+    .bar:before {
+      left:50%;
+    }
+    .bar:after {
+      right:50%;
+    }
+
+    /* active state */
+    input:focus ~ .bar:before, input:focus ~ .bar:after ,
+    textarea:focus ~ .bar:before, textarea:focus ~ .bar:after {
+      width:50%;
+
+    }
+
+    /* HIGHLIGHTER ================================== */
+    .highlight {
+      position:absolute;
+      height:60%;
+      width:100px;
+      top:25%;
+      left:0;
+      pointer-events:none;
+      opacity:0.5;
+    }
+
+    /* active state */
+    input:focus ~ .highlight ,
+    textarea:focus ~ .highlight {
+      -webkit-animation:inputHighlighter 0.3s ease;
+      -moz-animation:inputHighlighter 0.3s ease;
+      animation:inputHighlighter 0.3s ease;
+    }
+
+    /* ANIMATIONS ================ */
+    @-webkit-keyframes inputHighlighter {
+      from { background:#5386FF; }
+      to 	{ width:0; background:transparent; }
+    }
+    @-moz-keyframes inputHighlighter {
+      from { background:#5386FF; }
+      to 	{ width:0; background:transparent; }
+    }
+    @keyframes inputHighlighter{
+      from{background:#5386FF; }
+      to {width:0; background:transparent;}
+    }
+
+
+    .flex-wrap{
+
+      display: flex;
+      flex-direction: column;
+
+    }
+
+    textarea{
+      resize: none;
+    }
+
+
+    .contact-submit-btn{
+
+        height: 56px;
+        width: 100%;
+        border-radius: 6px;
+        background-color: #5386FF;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+
+        color: #FFFFFF;
+        font-family: "IBM Plex Sans";
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 20px;
+        text-align: center;
+      border: none;
+    }
+
+
+@media (min-width: 68em) {
+
+  .flex-wrap{
+    flex-direction: row;
+
+    .form-left{
+      width: 400px;
+
+      margin-right: 56px;
+    }
+
+    textarea{
+      width: 400px;
+    }
+  }
+  .contact-submit-btn {
+    height: 56px;
+    width: 196px;
+  }
+
+}
